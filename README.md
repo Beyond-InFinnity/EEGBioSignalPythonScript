@@ -57,22 +57,23 @@
 
 ---
 
-## Mathematical Notes (GitHub-safe summary)
+## Mathematical Notes
 
-For full LaTeX derivations, see the Jupyter notebook:
-notebooks/math_notes.ipynb
+The mathematical derivations are described verbally here, with full LaTeX formulas
+and worked examples available in [math_notes.ipynb](./notebooks/math_notes.ipynb).
 
-FFT power spectrum (normalized)  
-P(f) = |X(f)|^2 / (sum w[n]^2 * fs)
+- **FFT Power Spectrum Normalization** — why window normalization is required to get
+  consistent power scaling ([see notebook §1](https://nbviewer.org/github/your-repo/blob/main/notebooks/math_notes.ipynb#1-FFT-Power-Spectrum-with-Window-Normalization)).
 
-Frequency resolution  
-df = fs / N  
-(Zero-padding increases the number of FFT bins and refines the grid used for interpolation.)
+- **Frequency Resolution and Zero-Padding** — how FFT bin width depends on window length,
+  and why zero-padding improves interpolation ([see notebook §2](https://nbviewer.org/github/your-repo/blob/main/notebooks/math_notes.ipynb#2-Frequency-Resolution-and-Zero-Padding)).
 
-Parabolic peak interpolation  
-delta = 0.5 * (y[-1] - y[+1]) / (y[-1] - 2*y[0] + y[+1])  
-f_est = f0 + delta * df  
-(This provides sub-bin frequency estimates, important for 15 s windows.)
+- **Parabolic Peak Interpolation** — technique for refining peak location between bins
+  to achieve sub-bin accuracy ([see notebook §3](https://nbviewer.org/github/your-repo/blob/main/notebooks/math_notes.ipynb#3-Parabolic-Peak-Interpolation)).
+
+- **BPM Conversion** — how the refined frequency is converted into breaths per minute
+  ([see notebook §4](https://nbviewer.org/github/your-repo/blob/main/notebooks/math_notes.ipynb#4-Why-FFT-is-Effective-for-BPM-Estimation)).
+
 
 ---
 

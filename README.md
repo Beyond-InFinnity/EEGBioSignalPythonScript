@@ -62,16 +62,16 @@
 The mathematical derivations are described verbally here, with full LaTeX formulas
 and worked examples available in [math_notes.ipynb](./notebooks/math_notes.ipynb).
 
-- **FFT Power Spectrum Normalization** — why window normalization is required to get
+- **FFT Power Spectrum Normalization**: why window normalization is required to get
   consistent power scaling ([see notebook §1](https://nbviewer.org/github/Beyond-InFinnity/EEGBioSignalPythonScript/blob/main/notebooks/math_notes.ipynb#1-fft-power-spectrum-with-window-normalization)).
 
-- **Frequency Resolution and Zero-Padding** — how FFT bin width depends on window length,
+- **Frequency Resolution and Zero-Padding**:  how FFT bin width depends on window length,
   and why zero-padding improves interpolation ([see notebook §2](https://nbviewer.org/github/Beyond-InFinnity/EEGBioSignalPythonScript/blob/main/notebooks/math_notes.ipynb#2-frequency-resolution-and-zero-padding)).
 
-- **Parabolic Peak Interpolation** — technique for refining peak location between bins
+- **Parabolic Peak Interpolation**: technique for refining peak location between bins
   to achieve sub-bin accuracy ([see notebook §3](https://nbviewer.org/github/Beyond-InFinnity/EEGBioSignalPythonScript/blob/main/notebooks/math_notes.ipynb#3-parabolic-peak-interpolation)).
 
-- **BPM Conversion** — how the refined frequency is converted into breaths per minute
+- **BPM Conversion**: how the refined frequency is converted into breaths per minute
   ([see notebook §4](https://nbviewer.org/github/Beyond-InFinnity/EEGBioSignalPythonScript/blob/main/notebooks/math_notes.ipynb#4-why-fft-is-effective-for-bpm-estimation)).
 
 

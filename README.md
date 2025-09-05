@@ -14,7 +14,7 @@
 
 ---
 
-## Output Requirements (as specified by Farzad Ehsani)
+## Output Requirements
 
 - CSV with two columns:
   - time: HH:MM:SS, localized to PDT
